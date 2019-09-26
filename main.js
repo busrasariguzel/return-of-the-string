@@ -24,16 +24,16 @@ function twoCharacters(str, index1, index2) {
   return str[index1] + str[index2];
   // const answer = str[2] + str[11];
   // return answer;
-  
 
 }
 
 function initials(str) {
-
+  // const firstInitial = firstCharacter(str);
+  // const spaceIndex = str.IndexOf(' ');
+  // const secondInitial = str[spaceIndex+1];
+  // return firstInitial + '.' + secondInitial + '.';
   
   return firstCharacter(str) + '.' + str[str.indexOf(' ')+1] + '.';
-
-
 
 }
 
@@ -45,6 +45,7 @@ function yeller(str) {
 
 
   return whatAmI3;
+  // return capitalize(exclaim(exclaim(exclaim(str))));
 
 
 
