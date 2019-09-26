@@ -64,6 +64,7 @@ describe('initials', () => {
   test('returns the initials of a full name', () => {
     expect(initials('Herman Melville')).toBe('H.M.')
   });
+  
 
   test('returns the first initial twice if given only one name', () => {
     expect(initials('Colin')).toBe('C.C.');

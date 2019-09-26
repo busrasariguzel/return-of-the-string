@@ -1,26 +1,56 @@
-function capitalize() {
+function capitalize(str) {
+  return str.toUpperCase();
+
 }
 
-function exclaim() {
+function exclaim(str) {
+  return str + '!';
 }
 
-function firstCharacter() {
+function firstCharacter(str) {
+  return str[0];
 }
 
-function lastCharacter() {
+function lastCharacter(str) {
+  return str[str.length-1];
 }
 
-function oneCharacter() {
+function oneCharacter(str) {
+  return str[8];
+
 }
 
-function twoCharacters() {
+function twoCharacters(str) {
+  const answer = str[2] + str[11];
+  return answer;
+  
+  
+
+
 }
 
-function initials() {
+function initials(str) {
+
+  
+  return firstCharacter(str) + '.' + str[str.indexOf(' ')+1] + '.';
+
+
+  
 }
 
-function yeller() {
+function yeller(str) {
+  const capitalized = capitalize(str);
+  const whatAmI = exclaim(capitalized);
+  const whatAmI2 = exclaim(whatAmI);
+  const whatAmI3 = exclaim(whatAmI2);
+
+
+  return whatAmI3;
+
+
+
 }
+
 
 
 module.exports = {
