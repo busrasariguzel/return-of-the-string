@@ -15,17 +15,16 @@ function lastCharacter(str) {
   return str[str.length-1];
 }
 
-function oneCharacter(str) {
-  return str[8];
+function oneCharacter(str,i) {
+  return str[i];
 
 }
 
-function twoCharacters(str) {
-  const answer = str[2] + str[11];
-  return answer;
+function twoCharacters(str, index1, index2) {
+  return str[index1] + str[index2];
+  // const answer = str[2] + str[11];
+  // return answer;
   
-  
-
 
 }
 
@@ -35,7 +34,7 @@ function initials(str) {
   return firstCharacter(str) + '.' + str[str.indexOf(' ')+1] + '.';
 
 
-  
+
 }
 
 function yeller(str) {
